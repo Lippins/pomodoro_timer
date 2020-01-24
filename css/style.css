@@ -1,3 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+
+body{
+    background: #E74D3D;
+}
+
+.container{
+    margin-top: 60px;
+    font-family: 'Varela Round', sans-serif;
+    color: #FFFFFF;
+    border-radius: 60px;
+    border: 5px outset #BF392B;
+}
+
+h2{
+    font-family: 'Pacifico', cursive;
+    font-size: 300%;
+}
+
+#clock{
+    font-size: 500%;
+}
+
+.spacing-lg{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.spacing-sm{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .value{
     padding: 10px;
     margin-left: 5px;
@@ -5,13 +39,34 @@
 }
 
 .showcase{
-    margin-top: 20px;
-    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    border: 5px double #1E90FF ;
+    border: 5px solid #FFFFFF;
     justify-content: center;
     border-radius: 50%;
     width: 280px;
     height: 280px;
+    background: #BF392B;
+}
+
+.btn{
+    color: #ffffff;
+    background: #BF392B;
+    border: none;
+}
+
+
+.btn:hover{
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.hide{
+    opacity: 0;
+    transition: 1000ms ease;
+}
+
+.footnote{
+    margin-top: 30px;
+    margin-bottom: 20px;
 }

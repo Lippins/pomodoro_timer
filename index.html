@@ -10,62 +10,64 @@
 </head>
 <body>
     <main>
-        <div class="container">
-            <div class="row justify-content-center">
+        <div class="container col-12 col-sm-8 col-md-8 col-lg-5 col-xl-4">
+            <div class="row spacing-lg justify-content-center">
                 <div class="col-8 text-center">
                     <h2>Pomodoro Timer</h2>
                 </div>
             </div>
 
            <div class="pomodoro">
-                <div class="row justify-content-center">
+                <div class="row spacing-lg justify-content-center">
                     <div class="col-6 session text-center">
                         <h5>Session Length</h5>
-                        <button class="modifiers btn btn-outline-primary">-</button>
-                        <span class="value border border-info rounded-circle">25</span>
-                        <button class="modifiers btn btn-outline-primary">+</button>
+                        <button id="session_dcr" class="btn">-</button>
+                        <span id="session" class="value border border-danger rounded-circle">25</span>
+                        <button id="session_incr" class="btn">+</button>
                     </div>
                     <div class="col-6 break text-center">
                         <h5>Break Length</h5>
-                        <button class="modifiers btn btn-outline-primary">-</button>
-                        <span class="value border border-info rounded-circle">05</span>
-                        <button class="modifiers btn btn-outline-primary">+</button>
+                        <button id="break_dcr" class="btn">-</button>
+                        <span id="break" class="value border border-danger rounded-circle">05</span>
+                        <button id="break_incr" class="btn">+</button>
                     </div>
                 </div>
 
-                <div class="row justify-content-center">
+                <div class="row spacing-sm justify-content-center">
                     <div class="col-6 text-right">
-                        <button id="start" class="btn btn-light">START</button>
+                        <button id="start" class="btn">START</button>
                     </div>
                     <div class="col-6">
-                        <button id="pause" class="btn btn-light">PAUSE</button>
+                        <button id="pause" class="btn">PAUSE</button>
                     </div>
                 </div>
 
-                <div class="row justify-content-center">
+                <div class="row spacing-sm justify-content-center">
                     <div class="showcase text-center">
-                        <h4 class="active_session">Session</h4>
-                        <h1>25:00</h1>
+                        <h4 id="session_banner" class="active_session">Session</h4>
+                        <h1 id="clock">25:00</h1>
                     </div>
                 </div>
 
                 <div class="row justify-content-center">
                     <div class="col-6 text-right">
-                        <button id="start" class="btn btn-light">RESET</button>
+                        <button id="reset" class="btn">RESET</button>
                     </div>
                     <div class="col-6">
-                        <button id="pause" class="btn btn-light">STOP</button>
+                        <button id="stop" class="btn">STOP</button>
                     </div>
                 </div>
 
-                <div class="row footnote justify-content-center">
-                    <div class="col-6 text-center">
-                            Designed and coded by <em>Ogunmola Israel</em> aka <em>Lippincott lippins</em> 2019
+                <div class="row spacing-sm footnote justify-content-center">
+                    <div class="col-10 text-center">
+                        Designed and coded by Ogunmola Israel aka <em>Lippincott lippins</em> &copy; 2019
                     </div>
                 </div>
             </div>
         </div>
     </main>
+
+    <audio id="sound" src="./assets/sound1.mp3"></audio>
 </body>
 
 <script src="./assets/bootstrap/js/bootstrapjquery.js"></script>
