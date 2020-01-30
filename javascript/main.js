@@ -69,12 +69,15 @@ function timer(seconds){
 
     countdown = setInterval(() => {
        secondsLeft = Math.round((startTime - Date.now())/ 1000);
-        
+
+        secondsLeft < 10 ? clock.style.color = "limegreen": clock.style.color = "white"; 
+
         if (secondsLeft <= 0) {
             secondsLeft = 0;
             sound.play();
             displayTimeLeft(secondsLeft);
             clearInterval(countdown);
+            clock.style.color = "white";
             (isBreak == false || isBreak == "") ? isBreak = true : isBreak = false;
             checkBreak();
         } else{

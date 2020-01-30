@@ -59,6 +59,7 @@ h2{
 .btn:hover{
     color: #FFFFFF;
     font-weight: bold;
+    background: #6B2017;
 }
 
 .hide{
